@@ -1,5 +1,3 @@
-from sys import argv
-
 class Book():
     def __init__(self, filename):
         self.file_text = ""
@@ -52,13 +50,3 @@ class Book():
         print(f"{word_count} words found!\nHere is an analysis of the most used letters:")
         for letter in self.char_report_list:
             print(f"'{letter['key'].upper()}' was found {letter['count']} times")
-
-def main():
-    if len(argv) != 2:
-        raise ValueError("expecting a file to read")
-    book_file = argv[1]
-    book = Book(book_file)
-    book.print_report()
-        
-if __name__ == "__main__":
-    main()
