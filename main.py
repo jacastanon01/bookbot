@@ -40,7 +40,7 @@ def print_report(book):
     word_count = book.get_word_count()
     title = f"-- Processing file `{book.filename}` --"
     print(title)
-    # print ('-' for i in range(len(title)))
+    print('-' * len(title))
 
     for (key,value) in char_dict.items():
         items = {}
@@ -49,7 +49,7 @@ def print_report(book):
         char_report_list.append(items)
         char_report_list.sort(reverse=True, key=get_char_num)
 
-    # print(f"{word_count} words found!\nHere is an analysis of the most used letters:")
+    print(f"{word_count} words found!\nHere is an analysis of the most used letters:")
 
 
     for letter in char_report_list:
