@@ -23,7 +23,7 @@ git clone https://github.com/jacastanon01/bookbot.git
 This tool requires a path to a .txt file you wish to analyze. Use the following format to execute the script. There are two main scripts that are functionally the same. Specify which script you'd like to run and the subdirectory. For example, to run the OOP file:
 
 ```sh
-python OOP/main.py <path_to_your_file/file_name.txt>
+python3 OOP/main.py <path_to_your_file/file_name.txt>
 ```
 
 If no exceptions are raised, the output should provide a detailed report:
