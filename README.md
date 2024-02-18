@@ -1,9 +1,21 @@
 # Bookbot
 
-Bookbot is a simple command-line program that reads text from a file and generates a report about the text.
+Bookbot is a simple Python-based command-line tool that reads text from a .txt file, analyzes the text, and generates a report. It provides a breakdown of word count and frequency of each letter.
 
-## Usage
+### PREREQUISITES
+Python (version 3.12 or later)
 
-- Install Python 3.12.
-- Clone this repo `git clone https://github.com/jacastanon01/bookbot.git`
-- This cli tool will need a path to the text file you wish to analyze. Follow the convention `python main.py <PATH/file_name.txt>`
+### INSTALLATION
+Clone this repository using the following command:
+```sh
+git clone https://github.com/jacastanon01/bookbot.git
+```
+### USAGE
+This tool requires a path to a .txt file you wish to analyze. Use the following format to execute the script:
+```sh
+python main.py <path_to_your_file/file_name.txt>
+```
+If no exceptions are raised, the output should provide a detailed report:
+
+<img width="432" alt="Screenshot 2024-02-18 at 10 04 27 AM" src="https://github.com/jacastanon01/bookbot/assets/24418510/7b06a4e8-9c26-4849-8258-d8c454bb73cc">
+
